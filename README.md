@@ -1,4 +1,35 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Rejected.us - Share Your Rejection Stories
+
+This project is a simple web application that displays a collection of "rejection stories" from various individuals, aiming to normalize and share these experiences. It was originally bootstrapped with Create React App.
+
+## Project Structure
+
+The main components of this application are:
+
+-   `public/index.html`: The main HTML file.
+-   `src/index.js`: The entry point for the React application.
+-   `src/App.js`: The main application component that lays out the page and renders the list of stories.
+-   `src/Header.js`: The header component for the application.
+-   `src/Footer.js`: The footer component, including links for contributing.
+-   `src/Story.js`: A component responsible for rendering an individual story card. It takes a `story` object as a prop.
+-   `src/data/stories.js`: This file exports an array of JavaScript objects, where each object represents a story. Each story object contains details like `fullName`, `handle`, `avatar`, `story`, etc.
+
+## How to Contribute a Story
+
+We welcome contributions! To add your own rejection story:
+
+1.  Fork the repository.
+2.  Open the `src/data/stories.js` file.
+3.  Add a new story object to the array, following the existing format. Make sure to include:
+    *   `fullName`: Your full name.
+    *   `handle`: Your Twitter/X handle (or other relevant social media handle).
+    *   `website`: A link to your website or social media profile.
+    *   `bio`: A short bio.
+    *   `avatar`: The filename of your avatar image (e.g., `yourname.jpg`). Place this image in the `public/images/` directory.
+    *   `story`: Your rejection story.
+    *   `double`: (Optional) Set to `true` if you think your story might benefit from a wider display format (currently not implemented but planned for future).
+4.  Create a new branch for your changes.
+5.  Commit your changes and open a pull request against the main repository.
 
 ## Available Scripts
 
@@ -6,39 +37,17 @@ In the project directory, you can run:
 
 ### `npm start`
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
-
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+Runs the app in the development mode. Open [http://localhost:3000](http://localhost:3000) to view it in the browser. The page will reload if you make edits.
 
 ### `npm test`
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Launches the test runner in the interactive watch mode.
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Builds the app for production to the `build` folder. It correctly bundles React in production mode and optimizes the build for the best performance.
 
 ## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+-   [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started)
+-   [React documentation](https://reactjs.org/)
